@@ -7,7 +7,7 @@ extern "C"
 
 int main(int argc, char ** argv)
 {
-    fmt::print("pdcc");
+    fmt::print("pdcc\n");
 
     return 0;
 }
