@@ -27,6 +27,7 @@ target_include_directories(${PROJECT_NAME}
 set(HEADER_FILES
     )
 set(SOURCE_FILES
+    input_tests.cpp
     pdcc_tests.cpp
     )
 

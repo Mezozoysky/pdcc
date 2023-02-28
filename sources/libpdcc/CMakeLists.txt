@@ -13,7 +13,7 @@ set_target_properties(${PROJECT_NAME}
     LINKER_LANGUAGE CXX
     CXX_STANDARD 20
     CXX_STANDARD_REQUIRED ON
-    OUTPUT_NAME machine
+    OUTPUT_NAME pdcc
     )
 target_link_libraries(${PROJECT_NAME}
     INTERFACE
@@ -23,16 +23,21 @@ target_link_libraries(${PROJECT_NAME}
     )
 target_include_directories(${PROJECT_NAME}
     PUBLIC
-    "${CMAKE_CURRENT_LIST_DIR}"
+    "${CMAKE_CURRENT_LIST_DIR}/include"
     #    $<TARGET_PROPERTY:spdlog::spdlog,INTERFACE_INCLUDE_DIRECTORIES>
     $<TARGET_PROPERTY:fmt::fmt,INTERFACE_INCLUDE_DIRECTORIES>
     )
 
 set(HEADER_FILES
-    pdcc.hpp
+    include/pd/cc/input.hpp
+    include/pd/cc/string_input_base.hpp
+    include/pd/cc/string_input.hpp
+    include/pd/cc/pdcc.hpp
     )
 set(SOURCE_FILES
-    pdcc.cpp
+    src/pd/cc/string_input_base.cpp
+    src/pd/cc/string_input.cpp
+    src/pd/cc/pdcc.cpp
     )
 
 target_sources(${PROJECT_NAME}
