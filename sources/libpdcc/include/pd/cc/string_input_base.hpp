@@ -2,7 +2,6 @@
 
 #include "input.hpp"
 #include <string>
-#include <cstddef>
 
 
 namespace pd::cc

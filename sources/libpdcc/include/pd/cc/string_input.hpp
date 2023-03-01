@@ -1,8 +1,6 @@
 #pragma once
 
 #include "string_input_base.hpp"
-#include <string>
-#include <cstddef>
 
 
 namespace pd::cc
