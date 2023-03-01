@@ -36,4 +36,5 @@ build/
 
 # editor/ide-project-related files/dirs
 .projectile
+CMakeLists.txt.user*
 
