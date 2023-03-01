@@ -33,12 +33,14 @@ set(HEADER_FILES
     include/pd/cc/string_input_base.hpp
     include/pd/cc/string_input.hpp
     include/pd/cc/slurp_input.hpp
+    include/pd/cc/token.hpp
     include/pd/cc/pdcc.hpp
     )
 set(SOURCE_FILES
     src/pd/cc/string_input_base.cpp
     src/pd/cc/string_input.cpp
     src/pd/cc/slurp_input.cpp
+    src/pd/cc/token.cpp
     src/pd/cc/pdcc.cpp
     )
 

@@ -28,6 +28,7 @@ set(HEADER_FILES
     )
 set(SOURCE_FILES
     input_tests.cpp
+    token_tests.cpp
     pdcc_tests.cpp
     )
 
