@@ -1,0 +1,16 @@
+program         = func_decl
+
+func_decl       = type, identifier, "(", ")", statement
+
+type            = "int"
+                | "void"
+
+statement       = compound_stmnt
+                | return_stmnt
+                | ";"
+
+compont_stmnt   = "{", {statement}, "}"
+
+return_stmnt    = "return", expression, ";"
+
+expression      = int_literal
